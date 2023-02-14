@@ -1,0 +1,10 @@
+[Unit]
+Description=Set sunrise and sunset times for nightthemeswitcher extension
+Wants=sunset.timer
+
+[Service]
+Type=oneshot
+ExecStart=%h/.local/bin/sunset.py
+
+[Install]
+WantedBy=default.target

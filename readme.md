@@ -1,0 +1,1 @@
+Set sunrise and sunset times for nightthemeswitcher extension

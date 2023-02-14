@@ -1,0 +1,11 @@
+[Unit]
+Description=Set sunrise and sunset times for nightthemeswitcher extension
+Requires=sunset.service
+
+[Timer]
+Unit=sunset.service
+OnCalendar=daily
+Persistent=true
+
+[Install]
+WantedBy=timers.target
