@@ -10,7 +10,7 @@ install:
 
 uninstall:
 	systemctl --user disable sunset.timer
+	systemctl --user stop sunset.timer
 	rm -rf ${SYSTEMD_DIR}/sunset.{service,timer}
 	rm -rf ${BIN_DIR}/sunset.py
-	systemctl --user stop sunset.timer
 	systemctl --user daemon-reload
